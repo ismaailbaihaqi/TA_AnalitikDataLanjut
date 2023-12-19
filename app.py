@@ -274,7 +274,7 @@ elif page == "Make Prediction":
     # Add more input features as needed for your model
 
     # Load the saved model (assuming you saved it during training)
-    model_path = r'random_forest_model.pkl'
+    model_path = 'random_forest_model.pkl'
     try:
         model = joblib.load(model_path)
         if not hasattr(model, 'fit'):
