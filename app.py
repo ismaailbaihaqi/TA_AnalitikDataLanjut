@@ -16,7 +16,7 @@ import joblib
 st.title('Flight Price Prediction')
 
  # Baca file CSV
-df = pd.read_csv('TA_AnalitikDataLanjut/Clean_Dataset.csv')
+df = pd.read_csv('./Clean_Dataset.csv')
 df_economy = df[df['class'] == 'Economy']
 
 # Menambahkan navigasi di sidebar
@@ -274,7 +274,7 @@ elif page == "Make Prediction":
     # Add more input features as needed for your model
 
     # Load the saved model (assuming you saved it during training)
-    model_path = 'TA_AnalitikDataLanjut/random_forest_model.pkl'
+    model_path = './random_forest_model.pkl'
     try:
         model = joblib.load(model_path)
         if not hasattr(model, 'fit'):
