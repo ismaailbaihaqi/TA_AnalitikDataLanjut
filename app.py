@@ -287,7 +287,7 @@ elif page == "Make Prediction":
     # Ensure the model is fitted before making predictions
         if hasattr(model, 'predict'):
             prediction = model.predict(input_data)
-            st.subheader('Predicted Price using random forest regretion:')
+            st.subheader('Predicted Price using random forest regression:')
             st.write(prediction[0])  # Assuming the prediction is a single value
         else:
             st.warning("Model is not fitted.")
