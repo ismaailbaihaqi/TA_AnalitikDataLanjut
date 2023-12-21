@@ -221,8 +221,8 @@ elif page == "Days Left":
     fig, ax = plt.subplots(figsize=(10, 5))
     sns.lineplot(data=df, y='days_left', x='price', color='blue', ax=ax)
     ax.set_title('Days Left Vs Price', fontsize=20)
-    ax.set_xlabel('Days Left', fontsize=15)
-    ax.set_ylabel('Price', fontsize=15)
+    ax.set_ylabel('Days Left', fontsize=15)
+    ax.set_xlabel('Price', fontsize=15)
 
     # Display the plot in Streamlit
     st.pyplot(fig)
