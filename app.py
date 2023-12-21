@@ -219,10 +219,10 @@ elif page == "Days Left":
     st.write('- Pemantauan Harga: Memonitor perubahan harga tiket secara rutin dapat membantu penumpang menangkap penawaran terbaik. Beberapa situs web dan aplikasi menyediakan layanan pemantauan harga untuk membantu penumpang memilih waktu yang tepat untuk membeli tiket.')
     # Plotting the line plot
     fig, ax = plt.subplots(figsize=(10, 5))
-    sns.lineplot(data=df, y='days_left', x='price', color='blue', ax=ax)
+    sns.lineplot(data=df, x='days_left', y='price', color='blue', ax=ax)
     ax.set_title('Days Left Vs Price', fontsize=20)
-    ax.set_ylabel('Days Left', fontsize=15)
-    ax.set_xlabel('Price', fontsize=15)
+    ax.set_xlabel('Days Left', fontsize=15)
+    ax.set_ylabel('Price', fontsize=15)
 
     # Display the plot in Streamlit
     st.pyplot(fig)
