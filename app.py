@@ -25,6 +25,7 @@ st.write("- Nayaka Wiryatama_065002200003")
 st.write("- Rizky Ramadhan_065002200010")
 st.write("- Ery Febrian_065002200011")
 st.write("- Ismail Baihaqi_065002200025")
+st.write("- Dio Ariandra_065002200024")
 page = st.sidebar.radio("Pilih halaman", ["Dataset", "Perbandingan Class", "Class Vs Ticket Price","Flights Count", "Stops", "Departure and Arrival", "Source and Destination", "Duration", "Days Left", 
 "Actual vs Predicted","Make Prediction"])
 
